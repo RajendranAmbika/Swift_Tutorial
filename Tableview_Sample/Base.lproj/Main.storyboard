@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14111" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tableview_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yxa-HR-4CP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="100" id="nvb-2L-jI6" customClass="TableViewCell" customModule="Tableview_Sample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nvb-2L-jI6" id="7bM-kW-iGW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNj-Uy-VBP">
+                                                    <rect key="frame" x="10" y="5.5" width="90" height="90"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lion.jpg" highlightedImage="Lion" translatesAutoresizingMaskIntoConstraints="NO" id="SHr-bN-9tf">
+                                                            <rect key="frame" x="5" y="5" width="80" height="80"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="80" id="1bC-Rj-E5C"/>
+                                                                <constraint firstAttribute="height" constant="80" id="V5j-AM-8p9"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="SHr-bN-9tf" secondAttribute="bottom" constant="5" id="A60-o8-YAe"/>
+                                                        <constraint firstItem="SHr-bN-9tf" firstAttribute="leading" secondItem="PNj-Uy-VBP" secondAttribute="leading" constant="5" id="CmK-9h-p2o"/>
+                                                        <constraint firstItem="SHr-bN-9tf" firstAttribute="centerY" secondItem="PNj-Uy-VBP" secondAttribute="centerY" id="UmH-yY-DhM"/>
+                                                        <constraint firstItem="SHr-bN-9tf" firstAttribute="top" secondItem="PNj-Uy-VBP" secondAttribute="top" constant="5" id="VeD-sb-RoU"/>
+                                                        <constraint firstItem="SHr-bN-9tf" firstAttribute="centerX" secondItem="PNj-Uy-VBP" secondAttribute="centerX" id="jxm-N7-JAI"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9f-PN-fzz">
+                                                    <rect key="frame" x="108" y="5" width="259" height="90.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="PNj-Uy-VBP" firstAttribute="top" secondItem="7bM-kW-iGW" secondAttribute="top" constant="5" id="0Uy-Z0-Je4"/>
+                                                <constraint firstAttribute="bottom" secondItem="PNj-Uy-VBP" secondAttribute="bottom" constant="5" id="Lbf-Yc-5nq"/>
+                                                <constraint firstItem="j9f-PN-fzz" firstAttribute="leading" secondItem="PNj-Uy-VBP" secondAttribute="trailing" constant="8" id="WUg-HE-hJx"/>
+                                                <constraint firstAttribute="trailing" secondItem="j9f-PN-fzz" secondAttribute="trailing" constant="8" id="cRC-Rx-17k"/>
+                                                <constraint firstItem="j9f-PN-fzz" firstAttribute="top" secondItem="7bM-kW-iGW" secondAttribute="top" constant="5" id="kr4-1Z-jkc"/>
+                                                <constraint firstItem="PNj-Uy-VBP" firstAttribute="leading" secondItem="7bM-kW-iGW" secondAttribute="leading" constant="10" id="q1F-pU-JWx"/>
+                                                <constraint firstAttribute="bottom" secondItem="j9f-PN-fzz" secondAttribute="bottom" constant="5" id="svc-Kd-8mD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="animalLbl" destination="j9f-PN-fzz" id="xm7-de-CSe"/>
+                                            <outlet property="animalView" destination="SHr-bN-9tf" id="Ocr-dc-XAz"/>
+                                            <outlet property="cellView" destination="PNj-Uy-VBP" id="Cdi-Sp-n3i"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yxa-HR-4CP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PxR-AE-jDI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yxa-HR-4CP" secondAttribute="bottom" id="VCQ-mB-P6W"/>
+                            <constraint firstItem="yxa-HR-4CP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eIY-nY-5wg"/>
+                            <constraint firstItem="yxa-HR-4CP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rJF-Qp-oPX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="customTableView" destination="yxa-HR-4CP" id="rFf-Ir-4tB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Lion" width="1024" height="768"/>
+        <image name="Lion.jpg" width="1024" height="768"/>
+    </resources>
+</document>
